@@ -7,7 +7,7 @@ body{
      /* yellow */
      background-color: #fffbb5;
      max-height: 100%;
-
+     overflow: hidden;
 
 }
 
@@ -18,7 +18,9 @@ body{
     grid-template-columns: 3fr 2fr 3fr;
     grid-template-rows: .7fr 9fr;
 
-    padding: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-bottom: 2vw;
     grid-template-areas:
     "toptext1 toptext2 toptext2"
      "name gradcircle gradcircle";
@@ -46,11 +48,13 @@ body{
     justify-content: end;
     position: sticky;
     top: 0;
+    padding-top: 2vh;
 
 }
 
 .toptext2>a{
     padding-left: 1.4vw;
+
     /* font-family: 'Unbounded'; */
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Poppins', Sans-serif;
@@ -103,6 +107,7 @@ body{
     border-radius: 50%;
     height: 92vh;
     width: 92vh;
+    margin-top: 4vw;
     background: radial-gradient(#ff8317,#ffad42,  #fffbb5, #fffcba);
     transition: all 3s ease;
 }
